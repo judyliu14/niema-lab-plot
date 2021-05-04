@@ -17,9 +17,7 @@ const first_chart = {
 
 class Chart extends Component {
 
-
     render() {
-
         return (
             <div className="chart">
                 <Scatter data={first_chart} />
