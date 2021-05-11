@@ -8,13 +8,13 @@ function App() {
     <div className="App">
       <Tabs>
         <div label="chart_1">
-          <Chart />
+          <Chart chart={1} />
         </div>
         <div label="chart_2">
-          <Chart />
+          <Chart chart={2} />
         </div>
         <div label="chart_3">
-          <Chart />
+          <Chart chart={3} />
         </div>
       </Tabs>
     </div>
