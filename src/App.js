@@ -6,16 +6,15 @@ import Tabs from './components/Tabs';
 function App() {
   return (
     <div className="App">
-      <Chart />
       <Tabs>
-        <div label="title1">
-          Content1
+        <div label="chart_1">
+          <Chart />
         </div>
-        <div label="title2">
-          Content2
+        <div label="chart_2">
+          <Chart />
         </div>
-        <div label="title3">
-          Content3
+        <div label="chart_3">
+          <Chart />
         </div>
       </Tabs>
     </div>
