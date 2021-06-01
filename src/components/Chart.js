@@ -32,6 +32,26 @@ const third_chart = {
     ],
 };
 
+const forth_chart = {
+    datasets: [
+        {
+            backgroundColor: 'green',
+            data: scatter_dataset['chart_4'],
+            label: "chart_4"
+        }
+    ],
+};
+
+const fifth_chart = {
+    datasets: [
+        {
+            backgroundColor: 'purple',
+            data: scatter_dataset['chart_5'],
+            label: "chart_5"
+        }
+    ],
+};
+
 const options = {
     scales: {
         yAxes: [
@@ -60,7 +80,9 @@ class Chart extends Component {
                     {
                         '1': <Scatter data={first_chart} options={options} />,
                         '2': <Scatter data={second_chart} options={options} />,
-                        '3': <Scatter data={third_chart} options={options} />
+                        '3': <Scatter data={third_chart} options={options} />,
+                        '4': <Scatter data={forth_chart} options={options} />,
+                        '5': <Scatter data={fifth_chart} options={options} />
                     }[this.props.chart]
                 }
             </div>
